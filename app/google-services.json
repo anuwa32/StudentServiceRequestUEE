@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "189844924224",
+    "project_id": "studentserviserequester",
+    "storage_bucket": "studentserviserequester.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189844924224:android:3eebda5541c38fcf80bca5",
+        "android_client_info": {
+          "package_name": "com.example.studentservicerequester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189844924224-hipl9ivk312es7s86abgl2e35nv67qcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsjCldoltLg8_T7Z4lqM1oY7NFhKV3ES0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189844924224-hipl9ivk312es7s86abgl2e35nv67qcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189844924224:android:04f88e1a1d7ca5f880bca5",
+        "android_client_info": {
+          "package_name": "com.example.studentserviserequester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189844924224-hipl9ivk312es7s86abgl2e35nv67qcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsjCldoltLg8_T7Z4lqM1oY7NFhKV3ES0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189844924224-hipl9ivk312es7s86abgl2e35nv67qcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
