@@ -54,7 +54,7 @@ public class RecycleViewAdapterActivity extends RecyclerView.Adapter <RecyclerVi
 
                 switch (item.getItemId()){
 
-                    case R.id.menu_edit:
+                    case R.id.menu_edit:  //update button
 
                         Intent intent = new Intent(context,AddRequestActivity.class);
                         intent.putExtra("key",std.getKey());
@@ -68,7 +68,7 @@ public class RecycleViewAdapterActivity extends RecyclerView.Adapter <RecyclerVi
                         context.startActivity(intent);
                         break;
 
-                    case R.id.menu_remove:
+                    case R.id.menu_remove:  //delete button
 
                         DAOStudentService dao = new DAOStudentService();
                         dao.remove(std.getKey()).addOnSuccessListener(suc ->{
