@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_shape"
+    android:background="@drawable/backgroundmain"
     tools:context=".MainActivity">
 
 
@@ -17,6 +17,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
         android:text="Logout"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,13 +36,30 @@
         android:id="@+id/btnAddReq"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
         android:layout_below="@id/idLogo"
-        android:layout_marginTop="100dp"
-        android:text="Add Request"/>
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="80dp"
+        android:text="Add Request" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpen"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="530dp"
+        android:text="Previous Requests" />
 
-
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/idLogo1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/forgot" />
 
 
 </RelativeLayout>

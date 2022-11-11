@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView CusRegister;
     TextView CusForgotPassword;
     Button btnLogin;
+    Button back;
     FirebaseAuth fBAuth;
 
 
@@ -38,8 +39,13 @@ public class LoginActivity extends AppCompatActivity {
         CusRegister = findViewById(R.id.CusRegister);
         CusForgotPassword = findViewById(R.id.CusForPass);
         btnLogin = findViewById(R.id.btnLogin);
+        back = findViewById(R.id.btnBack);
 
         fBAuth = FirebaseAuth.getInstance();
+
+        back.setOnClickListener(v->{
+            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+        });
 
         btnLogin.setOnClickListener(view -> {
             loginUser();

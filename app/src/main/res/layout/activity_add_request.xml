@@ -9,17 +9,19 @@
     android:padding="24dp"
     tools:context=".RegisterActivitySs">
 
-
+<!--    for back button-->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="270dp"
         android:layout_marginEnd="0dp"
         android:text="Back"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.949"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +32,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="-10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -53,7 +55,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="School"
-                android:inputType="text" />
+                android:inputType="text"
+                android:text=""/>
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -100,14 +103,36 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|phone"
+                android:hint="Contact Number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnReg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="30dp"
             android:text="Submit"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Previous Requests"/>
 
 <!--        <ProgressBar-->
 <!--            android:id="@+id/progressBar"-->
@@ -118,6 +143,15 @@
 <!--            android:layout_marginTop="40dp"-->
 <!--            android:layout_centerInParent="true"/>-->
 
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:src="@drawable/school"
+            android:layout_gravity="right"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="0dp"
+            />
 
     </LinearLayout>
 

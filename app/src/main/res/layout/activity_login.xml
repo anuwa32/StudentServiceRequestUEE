@@ -5,9 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_shape"
+    android:background="@drawable/backgroundmain"
     android:padding="24dp"
     tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="270dp"
+        android:shadowRadius="30"
+        android:text="Back"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
@@ -15,7 +33,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/login"/>
 
     <LinearLayout
@@ -71,6 +89,8 @@
             android:layout_marginTop="24dp"
             android:text="Login"/>
 
+
+
 <!--  register tag-->
         <LinearLayout
             android:layout_width="150dp"
@@ -113,6 +133,22 @@
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginStart="-80dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/idLogo"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/forgot" />
+
+            </RelativeLayout>
 
 
 

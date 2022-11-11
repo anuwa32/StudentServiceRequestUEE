@@ -3,6 +3,7 @@ package com.example.studentservicerequester;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -19,6 +20,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     TextInputEditText CusForgotPass;
     Button btnForgot;
+//    Button btnLogout;
     ProgressBar progressBar;
 
     FirebaseAuth auth;
@@ -40,8 +42,15 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                resetPassword();
             }
         });
+//        btnLogout.setOnClickListener(v->{
+//
+//            startActivity(new Intent(ForgotPasswordActivity.this, LoginActivity.class));
+//        });
 
     }
+
+    //check the details are empty
+
     private void resetPassword(){
         String email = CusForgotPass.getText().toString().trim();
 

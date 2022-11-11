@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnLogOut;
     Button btnAddReq;
     FirebaseAuth fBAuth;
+    Button btnOpen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         btnLogOut = findViewById(R.id.btnLogout);
         btnAddReq = findViewById(R.id.btnAddReq);
         fBAuth = FirebaseAuth.getInstance();
+
+        btnOpen = findViewById(R.id.btnOpen);
+        btnOpen.setOnClickListener(v-> {
+
+            Intent intent =  new Intent(MainActivity.this, RecycleViewActivity.class);
+            startActivity(intent);
+
+        });
 
         btnLogOut.setOnClickListener(view ->{
             fBAuth.signOut();
