@@ -17,8 +17,6 @@
         android:textSize="40sp"
         android:textStyle="bold" />
 
-
-
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/idLogo"
         android:layout_width="380dp"
